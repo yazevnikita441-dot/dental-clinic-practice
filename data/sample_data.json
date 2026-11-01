@@ -1,0 +1,369 @@
+{
+  "holidays": [
+    "2026-11-04"
+  ],
+  "services": [
+    {
+      "code": "T01",
+      "name": "Осмотр и консультация",
+      "specialty": "therapist",
+      "price": 1500,
+      "minutes": 30
+    },
+    {
+      "code": "T02",
+      "name": "Лечение кариеса (пломба)",
+      "specialty": "therapist",
+      "price": 6500,
+      "minutes": 60
+    },
+    {
+      "code": "T03",
+      "name": "Лечение каналов однокорневого зуба",
+      "specialty": "therapist",
+      "price": 9000,
+      "minutes": 90
+    },
+    {
+      "code": "G01",
+      "name": "Профессиональная гигиена полости рта",
+      "specialty": "hygienist",
+      "price": 5500,
+      "minutes": 60
+    },
+    {
+      "code": "S01",
+      "name": "Удаление зуба",
+      "specialty": "surgeon",
+      "price": 3500,
+      "minutes": 30
+    },
+    {
+      "code": "S02",
+      "name": "Установка импланта",
+      "specialty": "surgeon",
+      "price": 45000,
+      "minutes": 90
+    },
+    {
+      "code": "O01",
+      "name": "Металлокерамическая коронка",
+      "specialty": "orthopedist",
+      "price": 25000,
+      "minutes": 60
+    },
+    {
+      "code": "O02",
+      "name": "Коронка на имплант",
+      "specialty": "orthopedist",
+      "price": 55000,
+      "minutes": 75
+    }
+  ],
+  "doctors": [
+    {
+      "id": "D1",
+      "name": "Смирнова О.В.",
+      "specialty": "therapist",
+      "capacity_hours": 6.0
+    },
+    {
+      "id": "D2",
+      "name": "Козлов Д.И.",
+      "specialty": "therapist",
+      "capacity_hours": 6.0
+    },
+    {
+      "id": "D3",
+      "name": "Воронин А.П.",
+      "specialty": "surgeon",
+      "capacity_hours": 6.0
+    },
+    {
+      "id": "D4",
+      "name": "Лебедева Н.С.",
+      "specialty": "orthopedist",
+      "capacity_hours": 6.0
+    },
+    {
+      "id": "D5",
+      "name": "Орлова М.К.",
+      "specialty": "hygienist",
+      "capacity_hours": 6.0
+    }
+  ],
+  "plans": [
+    {
+      "id": "P1",
+      "patient": "Иванов А.А.",
+      "start_date": "2026-11-02",
+      "discount": 0,
+      "category_coef": 1.0,
+      "interval_days": 7,
+      "visits": [
+        {
+          "items": [
+            {
+              "code": "T01",
+              "qty": 1
+            },
+            {
+              "code": "T02",
+              "qty": 2
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "code": "T02",
+              "qty": 2
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "code": "G01",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "patient": "Петрова М.С.",
+      "start_date": "2026-11-02",
+      "discount": 10,
+      "category_coef": 1.0,
+      "interval_days": 7,
+      "visits": [
+        {
+          "items": [
+            {
+              "code": "T01",
+              "qty": 1
+            },
+            {
+              "code": "T03",
+              "qty": 2
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "code": "T03",
+              "qty": 1
+            },
+            {
+              "code": "T02",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "code": "G01",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "patient": "Сидоров К.Л.",
+      "start_date": "2026-11-09",
+      "discount": 0,
+      "category_coef": 1.25,
+      "interval_days": 14,
+      "visits": [
+        {
+          "items": [
+            {
+              "code": "S02",
+              "qty": 2
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "code": "O02",
+              "qty": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P4",
+      "patient": "Кузнецова Е.Р.",
+      "start_date": "2026-11-09",
+      "discount": 5,
+      "category_coef": 1.25,
+      "interval_days": 14,
+      "visits": [
+        {
+          "items": [
+            {
+              "code": "S02",
+              "qty": 2
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "code": "O02",
+              "qty": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P5",
+      "patient": "Морозов И.Д.",
+      "start_date": "2026-11-03",
+      "discount": 0,
+      "category_coef": 1.0,
+      "interval_days": 7,
+      "visits": [
+        {
+          "items": [
+            {
+              "code": "S01",
+              "qty": 3
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "code": "O01",
+              "qty": 2
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "code": "O01",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P6",
+      "patient": "Волкова Т.Н.",
+      "start_date": "2026-11-05",
+      "discount": 0,
+      "category_coef": 1.0,
+      "interval_days": 7,
+      "visits": [
+        {
+          "items": [
+            {
+              "code": "T01",
+              "qty": 1
+            },
+            {
+              "code": "T02",
+              "qty": 3
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "code": "T02",
+              "qty": 2
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "code": "T03",
+              "qty": 2
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "code": "G01",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P7",
+      "patient": "Григорьев П.Н.",
+      "start_date": "2026-11-06",
+      "discount": 15,
+      "category_coef": 1.0,
+      "interval_days": 7,
+      "visits": [
+        {
+          "items": [
+            {
+              "code": "G01",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "code": "S01",
+              "qty": 2
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "code": "O01",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P8",
+      "patient": "Ермакова Л.В.",
+      "start_date": "2026-11-09",
+      "discount": 0,
+      "category_coef": 1.25,
+      "interval_days": 14,
+      "visits": [
+        {
+          "items": [
+            {
+              "code": "S02",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "code": "O02",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
